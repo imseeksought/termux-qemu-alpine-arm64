@@ -56,7 +56,7 @@ Start the installation process:
 qemu-system-aarch64 \
   -M virt -m 2G -cpu cortex-a72 -smp 2 \
   -bios QEMU_EFI.fd \
-  -drive id=cdrom,media=cdrom,if=none,file=alpine-virt-3.21.0-aarch64.iso \
+  -drive id=cdrom,media=cdrom,if=none,file=alpine.iso \
   -device virtio-scsi-device -device scsi-cd,drive=cdrom \
   -drive id=hd0,media=disk,if=none,file=alpine.qcow2 \
   -device virtio-scsi-pci -device scsi-hd,drive=hd0 \
